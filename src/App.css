@@ -1,0 +1,152 @@
+/* Google Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Varela+Round&display=swap');
+
+/*Global Variable*/
+:root{
+
+    /*Backgroundc Color*/
+    --primary-color:#990033;
+    --secondary-color:#ffc2b4;
+    --primary-nav-color:#e21056;
+    --primary-bg:rgb(153 0 51 /14%);
+    --font-color:#b7b7b7;
+    --bg-color:#171717;
+    --bg-dark-color:#0c0b0b;
+    --white-color:#fdfffc;
+    --green-color: #0abf53;
+    --green-color-bg:rgb(10 191 83 /17%);
+    --blue-color:#6168ff;
+    --blue-color-bg:rgb(97 104 255/9%);
+    --border-color-light : rgb(255,255,255,0.2);
+    --box-shadow: 0 16px 48px rgb( 0 0 0/12%);
+    --dark-layer-color: linear-gradient(to top, rgb(21 21 21/67%), rgb(23 23 23 /17%));
+
+    /*Font-Family*/
+    --primary-font: 'Poppins' ,sans-serif;
+    font-size: 14px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-size: 14px;
+    font-family: var(--primary-font);
+    background-color: var(--bg-color);
+}
+
+/* Custom Scroll Bar*/
+::-webkit-scrollbar{
+    width:0.5rem;
+}
+::-webkit-scrollbar-track{
+    background: var(--secondary-color);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--primary-color);
+}
+a{
+    text-decoration: none;
+}
+.container-fluid{
+    width:100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.container{
+    width: auto;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.btn_wrapper {
+    margin-top: 15rem;
+}
+
+/* For screen widths <= 992px */
+@media (max-width: 992px) {
+    .btn_wrapper {
+        width: 100%;
+        text-align: center;
+        display: block;
+    }
+}
+
+/* For screen widths <= 767px */
+@media (max-width: 767px) {
+    .btn_wrapper {
+        margin-bottom: 3rem;
+    }
+}
+
+.btn{
+    padding: 0.857rem 2.571rem;
+    font-size: 1.143rem ;
+    border-radius: 2.143rem;
+    font-weight: 600;
+    box-shadow : 0 0.5rem 1rem rgb(16,16,16);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 0px;
+    border:none;
+    color: var(--white-color);
+    cursor:pointer;
+    background: var(--primary-color);
+    transition:all .3s ease-in-out;
+    margin-top: 20px;
+}
+.btn:hover{
+    outline-offset: .7143rem;
+}
+h1{
+    font-size: 3.875rem;
+    margin-bottom: 1.25rem;
+    font-weight: 600;
+    color:var(--white-color);
+}
+h2{
+    font-size: 2.875rem;
+    font-weight: 600;
+    color:var(--white-color);
+}
+h3{
+    font-size: 2.25rem;
+    font-weight: 600;
+    color:var(--white-color);
+}
+h4{
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+    font-weight: 600;
+    color:var(--white-color);
+}
+h5{
+    font-size: 1.5rem;
+    line-height: 1.2rem;
+    margin-bottom: 0.9375rem;
+    font-weight: 600;
+    color:var(--white-color);
+}
+h6{
+    font-size: .875rem;
+    margin-bottom: 0.9375rem;
+    text-transform: capitalize;
+    font-weight: 300;
+    color:var(--white-color);
+}
+p{
+    font-size: 1rem;
+    color:var(--font-color);
+    line-height: 1.62rem;
+    margin-bottom: 1rem;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  

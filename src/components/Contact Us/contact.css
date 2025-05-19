@@ -1,0 +1,111 @@
+
+#contact {
+    padding: 3rem 0;
+}
+
+#contact .contact_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+    #contact .contact_wrapper {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 767px) {
+    #contact .contact_wrapper {
+        flex-direction: column;
+    }
+}
+
+#contact .contact_wrapper .contact_col {
+    width: calc(50% - 4rem);
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 992px) {
+    #contact .contact_wrapper .contact_col {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    #contact .contact_wrapper .contact_col {
+        width: 100%;
+    }
+}
+
+#contact .contact_wrapper .input_wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact_wrapper .input_wrapper .form-control {
+    width: 100%;
+    background-color: transparent;
+    border: 0.0714rem solid var(--white-color);
+    color: var(--white-color);
+    font-size: 1.0714rem;
+    font-weight: 400;
+    padding: 0.7143rem 1.4286rem;
+    border-radius: 0.5714rem;
+    margin-bottom: 3rem;
+}
+
+#contact .contact_wrapper .input_wrapper textarea {
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: 0.0714rem solid var(--white-color);
+    color: var(--white-color);
+    font-size: 1.0714rem;
+    font-weight: 400;
+    padding: 0.7143rem 1.4286rem;
+    border-radius: 0.5714rem;
+    min-height: 7.1429rem;
+}
+ 
+#contact .contact_wrapper .input_wrapper .form-control:hover,
+#contact .contact_wrapper .input_wrapper textarea:hover,
+#contact .contact_wrapper .input_wrapper .form-control:focus,
+#contact .contact_wrapper .input_wrapper textarea:focus {
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+#contact .contact_wrapper .btn_wrapper {
+    margin-top: 2rem;
+}
+
+#contact .contact_wrapper .contact_image {
+    position: relative;
+}
+
+#contact .contact_wrapper .contact_image:after {
+    overflow: hidden;
+    content: url('../../assets/layer_2.png');
+    z-index: 1;
+    position: absolute;
+    top: -70px;
+    right: -20px;
+    max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #contact .contact_wrapper .contact_image:after {
+        right: 0;
+    }
+}
+
+#contact .contact_wrapper .contact_image img {
+    border-radius: 2.1429rem;
+    position: relative;
+    z-index: 2;
+    max-width: 85%;
+}
