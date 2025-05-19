@@ -1,5 +1,5 @@
 import React from 'react';
-import './Blog.css';
+import './blog.css';
 import BlogImage from '../../assets/blog.jpg';
 
 export default function Blog() {
